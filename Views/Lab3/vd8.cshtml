@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VD8</title>
+    <script type="text/javascript">function getValue(id) {
+            return document.getElementById(id).value.trim();
+
+        }
+        function showError(key, mess) {
+            document.getElementById(key + '_error').innerHTML = mess;
+        }
+        function validate() {
+            //username : ko đc rỗng tối thiểu 5 ký tự
+            //chỉ gồm chữ hoa chữ thường và chữ số
+            var username = getValue("username");
+            if (username == ' ' || username.length < 5 || !/^[a-zA-Z0-9]+$/.test(username))
+            {
+            showError('username', 'Vui lòng kiễm tra lại username')
+            }
+            //passwoed: có độ dài từ 8 ký tự trở lên
+            var password = getValue("password");
+            if (password == ' ' || password.length < 8 || !/^[a-zA-Z0-9]+$/.test(password))
+            {
+            showError('password', 'Vui lòng kiễm tra lại password')
+            }
+            var repassword = getValue("repassword");
+            if (repassword == ' ' || repassword.length < 8 || !/^[a-zA-Z0-9]+$/.test(repassword))
+            {
+            showError('repassword', 'Vui lòng kiễm tra Nhập lại mật khẩu')
+            }
+        }</script>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th colspan="2">Đăng ký</th>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập:</td>
+                <td>
+                    <input type="text" id="username" name="username" />
+                    <span id="username_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td>
+                    <input type="text" id="password" name="password" />
+                    <span id="password_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Nhập lại mật khẩu:</td>
+                <td>
+                    <input type="text" id="repassword" name="repassword" />
+                    <span id="repassword_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng ký" onclick="return validate();" />
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+</html>

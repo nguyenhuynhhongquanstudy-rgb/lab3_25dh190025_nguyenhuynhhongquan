@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VD4</title>
+    <script type="text/javascript" src="~/Scripts/myJS/VD4.js"></script>
+</head>
+<body>
+    NHẬP SỐ LƯỢNG VÀ ĐƠN GIÁ
+    <form>
+        Đơn giá : <input type="number" id="dg" /><br />
+        Số lượng:  <input type="number" id="sl"
+                          onkeyup="Tinhtien();"
+                          onchange="Tinhtien();" /><br />
+        Thành tiền: <input type="text" id="tt" />
+    </form>
+</body>
+</html>

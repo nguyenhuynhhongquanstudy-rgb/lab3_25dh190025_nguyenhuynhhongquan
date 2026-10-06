@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VD5</title>
+    <script type="text/javascript">function Respond() {
+            var checkUni = document.getElementByName("uni");
+            if (checkUni[0].checked == true) {
+                document.getElementById("huflit").innerHTML = 'Tôi là sinh viên khoa CNTT, Trường Huflit'
+            }
+            if (checkUni[1].checked == true) {
+                document.getElementById("huflit").innerHTML = 'Tôi không phải là sinh viên khoa CNTT, Trường Huflit'
+            }
+        }</script>
+
+</head>
+<body>
+    <h4> Bạn có là sinh viên khoa CNTT trường Huflit không?</h4>
+    <input type="radio" name="uni" />Phải<br />
+    <input type="radio" name="uni" />Không Phải<br />
+    <input type="submit" value="Trả lời" onclick="Respond();" /><br />
+    <span id="huflit"></span>
+</body>
+</html>
