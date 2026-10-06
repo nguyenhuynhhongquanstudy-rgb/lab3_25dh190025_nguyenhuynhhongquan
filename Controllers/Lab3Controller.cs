@@ -29,7 +29,19 @@ namespace lab3_25dh190025_nguyenhuynhhongquan.Controllers
             {
                 return View();
             }
-            public ActionResult VD8()
+            public ActionResult VD6()
+            {
+                return View();
+            }
+            public ActionResult VD7()
+            {
+                return View();
+            }
+            public ActionResult BT1()
+            {
+                return View();
+            }
+        public ActionResult VD8()
             {
                 return View();
             }
