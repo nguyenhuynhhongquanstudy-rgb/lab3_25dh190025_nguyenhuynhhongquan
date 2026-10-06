@@ -163,6 +163,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MyJS\BT1.js" />
     <Content Include="Scripts\MyJS\VD4.js" />
     <Content Include="Scripts\MyJS\VD3.js" />
     <Content Include="Scripts\MyJS\VD2.js" />
@@ -189,6 +190,7 @@
     <Content Include="Views\Lab3\vd8.cshtml" />
     <Content Include="Views\Lab3\vd6.cshtml" />
     <Content Include="Views\Lab3\vd7.cshtml" />
+    <Content Include="Views\Lab3\BT1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

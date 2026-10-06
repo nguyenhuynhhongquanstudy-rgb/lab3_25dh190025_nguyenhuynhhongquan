@@ -1,0 +1,65 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bài 1</title>
+    <script src="~/Scripts/MyJS/BT1.js"></script>
+</head>
+<body>
+    <h2>PHIẾU THAM GIA CLB TIN HỌC LUBU</h2>
+    <form>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td>Mã sinh viên :</td>
+                <td><input type="text" id="maSV" /></td>
+                <td id="errMaSV"></td>
+            </tr>
+            <tr>
+                <td>Họ và tên :</td>
+                <td><input type="text" id="hoTen" /></td>
+                <td id="errHoTen"></td>
+            </tr>
+            <tr>
+                <td>Tuổi :</td>
+                <td><input type="text" id="tuoi" /></td>
+                <td id="errTuoi"></td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ :</td>
+                <td>
+                    <input type="checkbox" name="ngoaiNgu" value="Anh" /> Anh
+                    <input type="checkbox" name="ngoaiNgu" value="Pháp" /> Pháp
+                    <input type="checkbox" name="ngoaiNgu" value="Nhật" /> Nhật
+                </td>
+                <td id="errNgoaiNgu"></td>
+            </tr>
+            <tr>
+                <td>Chuyên ngành :</td>
+                <td>
+                    <select id="chuyenNganh" onchange="capNhatSoTruong()">
+                        <option value="">Chọn</option>
+                        <option value="HeThong">Hệ thống</option>
+                        <option value="PhanMem">Phần mềm</option>
+                        <option value="MangMayTinh">Mạng máy tính</option>
+                    </select>
+                </td>
+                <td id="errChuyenNganh"></td>
+            </tr>
+            <tr>
+                <td>Số trường :</td>
+                <td><input type="text" id="soTruong" readonly /></td>
+                <td></td>
+            </tr>
+        </table>
+        <br />
+        <input type="button" value="Đăng ký" onclick="kiemTraVaDangKy()" />
+        <br /><br />
+        <span id="thongBaoChung"></span>
+    </form>
+</body>
+</html>
